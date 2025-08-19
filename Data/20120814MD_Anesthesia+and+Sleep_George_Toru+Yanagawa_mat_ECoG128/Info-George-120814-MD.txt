@@ -1,0 +1,21 @@
+Monkey: George
+Exp date: 20120814
+Anesthetic agent: Medetomidine
+Number of Session: 3
+
+Session : 1
+time: 0.90 [s] : AwakeEyesOpened-Start 
+time: 752.65 [s] : AwakeEyesOpened-End 
+time: 2662.53 [s] : AwakeEyesClosed-Start 
+time: 3383.28 [s] : AwakeEyesClosed-End 
+
+Session : 2
+time: 17.42 [s] : AnestheticInjection 
+time: 692.69 [s] : Anesthetized-Start 
+time: 1293.29 [s] : Anesthetized-End 
+
+Session : 3
+time: 605.71 [s] : RecoveryEyesClosed-Start 
+time: 1246.88 [s] : RecoveryEyesClosed-End 
+time: 1308.17 [s] : RecoveryEyesOpened-Start 
+time: 1965.33 [s] : RecoveryEyesOpened-End 
