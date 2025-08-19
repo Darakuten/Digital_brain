@@ -1,0 +1,63 @@
+{
+  "device": "cpu",
+  "config": {
+    "global_z_size": 2,
+    "global_tau": 10000,
+    "func_d_size": 15,
+    "func_z_size": 3,
+    "func_tau": 4,
+    "local_d_size": 15,
+    "local_z_size": 10,
+    "local_tau": 2,
+    "W_global": 0.001,
+    "W_global_t0": 0.001,
+    "W_func": 0.001,
+    "W_local": 0.001,
+    "learning_rate": 0.001,
+    "batch_size": 16,
+    "n_epochs": 100,
+    "window_size": 500,
+    "n_updates": 10,
+    "n_updates_initial": 10,
+    "da_learning_rate": 0.001
+  },
+  "protocol": {
+    "test_protocol": "z3",
+    "realtime_sequences": 50,
+    "z3_sequences_per_condition": 50,
+    "z2z1_sequences_per_condition": 25,
+    "segment_length": 2000
+  },
+  "train": {
+    "num_sequences": 72,
+    "seq_len": 2000,
+    "n_channels": 20,
+    "label_counts": {
+      "anesthesia(0)": 36,
+      "awake(1)": 36
+    },
+    "subjects": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  "test": {
+    "num_sequences": 100,
+    "seq_len": 2000,
+    "n_channels": 20,
+    "label_counts": {
+      "anesthesia(0)": 50,
+      "awake(1)": 50
+    },
+    "subjects": [
+      "4"
+    ]
+  },
+  "realtime": {
+    "num_sequences": 50,
+    "seq_len": 3470,
+    "n_channels": 20,
+    "note": "First 25 are Awake→Anesthesia, next 25 are Anesthesia→Awake"
+  }
+}
